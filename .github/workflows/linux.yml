@@ -23,6 +23,11 @@ jobs:
 #       # Runs a set of commands using the runners shell
       - name: unzip linux zip
         run: unzip ec5450256b.zip
+        
+      - name: install gcc-8
+        run: | 
+          sudo apt-get update
+          sudo apt-get install gcc-8
           
     
       - name: build linux
