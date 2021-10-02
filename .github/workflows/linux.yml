@@ -26,5 +26,4 @@ jobs:
           unzip ec5450256b.zip
     
       - name: build linux
-        run: |
-          ./build-linux.sh ./linux-ec5450256b468e4c9a8d939555acb3afc96796da/ tinyconfig
+        run: ./build-linux.sh ./linux-ec5450256b468e4c9a8d939555acb3afc96796da/ tinyconfig
