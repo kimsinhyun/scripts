@@ -1,11 +1,9 @@
 name: linux_test
 
 on: [push]
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-20.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -16,14 +14,16 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: recursive
 
-      # Runs a single command using the runners shell
       - name: wget linux zip file
-        run: wget https://github.com/kimsinhyun/linux/archive/ec5450256b.zip
-
-      # Runs a set of commands using the runners shell
-      - name: unzip linux zip
         run: |
-          unzip ec5450256b.zip
+          wget https://github.com/kimsinhyun/linux/archive/ec5450256b.zip
+          unzip ec5450256b.
+          ./build-linux.sh ./linux-ec5450256b468e4c9a8d939555acb3afc96796da/ tinyconfig
+
+#       # Runs a set of commands using the runners shell
+#       - name: unzip linux zip
+#         run: 
+          
     
-      - name: build linux
-        run: ./build-linux.sh ./linux-ec5450256b468e4c9a8d939555acb3afc96796da/ tinyconfig
+#       - name: build linux
+#         run: 
