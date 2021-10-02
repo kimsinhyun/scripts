@@ -22,7 +22,7 @@ jobs:
           
       - name: wget linux zip file
         run: |
-          wget https://github.com/kimsinhyun/linux/archive/ec5450256b.zip
+          wget https://github.com/kimsinhyun/linux/archive/9cffd5b854.zip
           
       
 
@@ -33,4 +33,4 @@ jobs:
     
       - name: build linux
         shell: bash
-        run: ./build-linux.sh linux-ec5450256b468e4c9a8d939555acb3afc96796da
+        run: ./build-linux.sh linux-9cffd5b8543f7af18ac562ab93f29d6e5b1689b9 tinyconfig
