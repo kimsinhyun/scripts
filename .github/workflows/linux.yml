@@ -17,13 +17,14 @@ jobs:
       - name: wget linux zip file
         run: |
           wget https://github.com/kimsinhyun/linux/archive/ec5450256b.zip
-          unzip ec5450256b.
-          ./build-linux.sh ./linux-ec5450256b468e4c9a8d939555acb3afc96796da/ tinyconfig
+          
+         
 
 #       # Runs a set of commands using the runners shell
-#       - name: unzip linux zip
-#         run: 
+      - name: unzip linux zip
+        run: unzip ec5450256b.
           
     
-#       - name: build linux
-#         run: 
+      - name: build linux
+        shell: bash
+        run:  ./build-linux.sh ./linux-ec5450256b468e4c9a8d939555acb3afc96796da/ tinyconfig
