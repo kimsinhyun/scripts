@@ -22,7 +22,7 @@ jobs:
 
 #       # Runs a set of commands using the runners shell
       - name: unzip linux zip
-        run: unzip ec5450256b.zip -d /home/runner/work/scripts/
+        run: unzip ec5450256b.zip -d /home/runner/work/scripts
           
     
       - name: build linux
