@@ -19,17 +19,12 @@ jobs:
         run: |
           ./install-deps.sh
           
-      - name: Get the commit number of Linux Repo(submodule) & Download the zip file
+      - name: Get the commit number of Linux Repo(submodule) & Download the zip file & unzip zip file
         shell: bash
         run: |
           Submodule_commit_Num=$(git submodule status | awk '{print $1}' | cut -c -10)
           wget https://github.com/kimsinhyun/linux/archive/$Submodule_commit_Num.zip
-
-        
-      - name: unzip linux zip
-        shell: bash
-        run: unzip $Submodule_commit_Num.zip
-        
+          unzip $Submodule_commit_Num.zip        
     
       - name: build linux
         shell: bash
