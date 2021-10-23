@@ -31,4 +31,4 @@ jobs:
         run: |
           Submodule_commit_Num_2="$(git submodule status | awk '{print $1}')"
           Submodule_commit_Num_2="linux-${Submodule_commit_Num_2}"
-          ./build-linux.sh $Submodule_commit_Num_2
+          ./build-linux.sh $Submodule_commit_Num_2 tinyconfig
