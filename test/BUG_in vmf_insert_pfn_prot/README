@@ -1,3 +1,3 @@
 Config: https://github.com/csi2115-f21/scripts/blob/main/configs/csi2115_f21_defconfig
 Reproduced: https://github.com/csi2115-f21/linux/commit/ec5450256b468e4c9a8d939555acb3afc96796da
-Patched: https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/commit/?id=7c832d2f9b959e3181370c8b0dacaf9efe13fc05
+Patched: https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/commit/?id=9004fd387338b1104499b2c52ef5729a32c408f0
